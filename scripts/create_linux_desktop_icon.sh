@@ -4,7 +4,7 @@ cd ..
 
 path=`pwd`
 
-target=$HOME/Desktop/PLSDR.desktop
+target=$(xdg-user-dir DESKTOP)/PLSDR.desktop
 
 cat << EOF > $target
 [Desktop Entry]
