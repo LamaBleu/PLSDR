@@ -246,7 +246,7 @@ class FFTDispWidget(QWidget):
         # based on the size of the frequency number
         ff = (f,0)[f < 0]
         qs = 3-int(math.log10(1+ff/1e6)+.5)
-        qs = (qs,0)[qs < 0]
+        qs = (qs,1)[qs < 1]
         sf = "%%.%df" % qs
         s = sf % (f/1e6)
         ssz = len(s) * self.dw/110
