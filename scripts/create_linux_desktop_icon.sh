@@ -10,7 +10,7 @@ cat << EOF > $target
 [Desktop Entry]
 Comment=PLSDR software-defined radio
 Encoding=UTF-8
-Exec=$path/PLSDR.py
+Exec=python $path/PLSDR.py
 GenericName=PLSDR
 GenericName[en_US]=PLSDR
 Icon=$path/icon/app_icon_32x32.png
